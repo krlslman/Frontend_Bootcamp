@@ -1,24 +1,24 @@
 ## USED;
-*action
-*method
+* action
+* method
 
-*fieldset
-*legend
+* fieldset
+* legend
 
-*input
-*type
-*name
-*id
-*value
-*placeholder
-*max/min
-*required
-*checked
+* input
+* type
+* name
+* id
+* value
+* placeholder
+* max/min
+* required
+* checked
 
 
-*label
-*select
-*optgroup
-*option
+* label
+* select
+* optgroup
+* option
 
-*datalist
+* datalist
