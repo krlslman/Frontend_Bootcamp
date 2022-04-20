@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#seker{
+			width:" 50px";
+			/* border: 2px; */
+		}
+	</style>
+</head>
+<!-- <style>
+	p {
+		background-image:  url(./cat_wpp.png);
+	}
+</style> -->
+<body>
+	<h3>Welcome To Clarusway</h3>
+
+	<!-- <p style="background-image: url(./cat_wpp.png);"> -->
+
+	<form action="result.html" method="get" >
+
+	<fieldset>
+		<legend>Personel Information</legend>
+		
+		<div>
+			<!-- <p>isim:</p> -->
+			<label for="name">Name : </label>
+			<input id="name" type="text" name="isim"
+			placeholder="Please enter your name...">
+			<br>
+			<!-- soyisim: -->
+			<label for="lastname">Last Name : </label>
+			<input id="lastname" type="text" name="soyisim"
+			placeholder="Please enter your last name...">
+			<br>
+			<!-- name, backend'te bilgiyi nasıl tutacağımızı belirler. Id ise burada label-input ilişkisi için. -->
+		</div>
+
+		<div>
+			<label for="passw">Password : </label>
+			<input type="password" name="sifre" id="passw" placeholder="Password...">
+		</div>
+
+		<div>
+			<label for="gender">Gender : </label>
+			<br>
+			<label for="gender" style="padding-left: 55px;">Male : </label>
+			<input type="radio" name="cinsiyet" id="gender" value="Erkek">
+
+			<label for="gender2" style="padding-left: 20px;">Female : </label>
+			<input type="radio" name="cinsiyet" id="gender2" value="Kadın" required>
+		</div>
+	</fieldset>
+		
+		<div>
+			<p>Choose your favorite animal fellas : </p>
+			<input type="checkbox" name="animal_1" id="panda" value="Panda">
+			<label for="panda">PANDA</label>
+
+			<input type="checkbox" name="animal_2" id="balık" value="Balık">
+			<label for="balık">FISH</label>
+
+			<input type="checkbox" name="animal_3" id="kedi" value="Kedi">
+			<label for="kedi">CAT</label>
+		</div>
+
+		<div  style="padding-top: 20px;">
+			<label for="age">AGE : </label>
+			<input type="number" name="girilen yaş" id="age" max="99" min="18" step="1" placeholder="32...">
+		</div>
+
+		<div  style="padding-top: 20px;">
+			<label for="search">Search keywords : </label>
+			<input type="search" name="arandı" id="search" placeholder="Search...">
+		</div>
+
+		<div style="padding-top: 20px;">
+			<label for="colorf">COLOR : </label>
+			<input type="color" name="renk" id="color">
+		</div>
+
+		<div style="padding-top: 20px;">
+			<label for="Date">DATE : </label>
+			<input type="date" name="seçilenTarih" id="Date">
+		</div>
+		<div style="padding-top: 20px;">
+			<label for="Email">EMAIL : </label>
+			<input type="email" name="" id="Email">
+		</div>
+
+		<div style="padding-top: 20px;">
+			<label for="File">Choose File : </label>
+			<input type="file" name="SeçilenDosya" id="File">
+		</div>
+
+		<div style="padding-top: 20px;">
+			<label for="phoneNum">Phone Number 1 : </label>
+			<input type="tel" name="telefon" id="phoneNum">
+		</div>
+
+		<div style="padding-top: 10px;">
+			<label for="phoneNum">Phone Number 1 : </label>
+			<input type="tel" name="telefon" id="phoneNum"
+			pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}-" placeholder="xxx-xxx-xxx-xx-xx"
+			value="090-532-850-11-22"			>
+		</div>
+
+		<div>
+			<label for="dessert">Which dessert you would prefer? </label>
+			<br>
+			<select name="tatli" id="dessert" size="5" multiple>
+				<option value="Cakes">Cakes</option>
+				<option value="Confection">Confection</option>
+				<option value="Custards">Custards</option>
+				<option value="Deep-fried">Deep-fried</option>
+				<option value="Frozen">Frozen</option>
+				<option value="Gelatin">Gelatin</option>
+				<option value="Pastries">Pastries</option>
+			</select>
+		</div>
+<hr>
+<!-- buraa xxxx liste başlığı -->
+		<div>
+			<label for="dino">Choose your favorite dinosaur? </label>
+			<select name="dinazor" id="dino">
+				<optgroup>Theropods </optgroup>
+					<option value="Tyrannousaunus">Tyrannousaunus</option>
+					<option value="Velociraptor">Velociraptor</option>
+					<option value="Deinonychus">Deinonychus</option>
+				
+				<optgroup>Sauropods</optgroup>
+					<option value="Diplodocus">Diplodocus</option>
+					<option value="Saltasarus">Saltasarus</option>
+					<option value="Apatosaurus">Apatosaurus</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="comment">Comments : </label>
+			<textarea name="girilenYorum" id="comment" style="resize: none; width: 75%;" cols="50" rows="3" placeholder="Comment here..."></textarea>
+		</div>
+
+		<div>
+			<label for="input-browser">Browser : </label>
+			<input type="text" name="kullanılan Browser" id="input-browser"
+			list="browser">
+
+			<datalist id="browser">
+				<option value="Chrome">Chrome</option>
+				<option value="Firefox">Firefox</option>
+				<option value="Safari">Safari</option>
+				<option value="Brave">Brave</option>
+			</datalist>
+		</div>
+
+		
+
+<br><br><br><br>
+
+<input type="submit" value="Send">
+<input type="reset" name="Reset All" id="">
+	</form>
+
+
+
+
+</body>
+</html>
