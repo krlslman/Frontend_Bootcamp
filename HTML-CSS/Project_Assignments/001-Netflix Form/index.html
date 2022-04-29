@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Baştaki Netflix ve açıklama yazıı bölümü -->
+      <header>
+        <h1 id="title">NET<span>FLIX</span></h1>
+
+        <h3 id="description">
+          Thank you for signing up to Netflix. Tell me about yourself
+        </h3>
+      </header>
+
+      <!-- Form alanı -->
+      <div id="survey-form-container">
+        <div id="survey-form">
+          <form action="result.html" method="GET" target="_blank">
+            <div class="input-box">
+              <label for="name">Name</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name..."
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="age">Age</label><br />
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Enter your age..."
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="content">Content Type</label>
+              <br />
+              <select name="content" id="dropdown">
+                <option value="movie">Movie</option>
+                <option value="series" selected>Series</option>
+              </select>
+            </div>
+
+            <!-- Movie type kısmındaki checkbox'lar -->
+            <div class="input-box">
+              <label for="Movie">Movie Type</label>
+              <br />
+              <input
+                type="checkbox"
+                name="movie"
+                id="firstCheck"
+                value="Comedy"
+                checked
+              />
+              <label for="firstCheck">Comedy</label> <br />
+
+              <input
+                type="checkbox"
+                name="movie"
+                id="secondCheck"
+                value="Action"
+              />
+              <label for="secondCheck">Action</label> <br />
+
+              <input
+                type="checkbox"
+                name="movie"
+                id="thirdCheck"
+                value="Romance"
+              />
+              <label for="thirdCheck">Romance</label> <br />
+            </div>
+
+            <!-- Gender radio buttons -->
+            <div class="input-box">
+              <label for="gender">Gender</label>
+              <br />
+              <input type="radio" name="gender" id="firstRadio" value="Male" />
+              <label for="firstRadio">Male</label> <br />
+              <input
+                type="radio"
+                name="gender"
+                id="secondRadio"
+                value="Female"
+              />
+              <label for="secondRadio">Female</label>
+              <br />
+              <input type="radio" name="gender" id="thirdRadio" value="Other" />
+              <label for="thirdRadio">Other</label>
+            </div>
+
+            <div class="input-box">
+              <label for="feedback">Feedback</label> <br />
+              <textarea
+                name="feedback"
+                id="feedback"
+                placeholder="Any comment..."
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div id="form-submit">
+              <input
+                type="submit"
+                name="SEND"
+                id="form-button"
+                value="SUBMIT"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <!-- BG blur -->
+      <style>
+        div {
+          backdrop-filter:blur(4px);
+        }
+      </style>
+
+    </div>
+
+  </body>
+  
+</html>

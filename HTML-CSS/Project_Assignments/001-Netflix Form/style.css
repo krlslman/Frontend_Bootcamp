@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Montserrat', sans-serif;
+	
+}
+
+body{
+	color: white;
+	background-image: url(./images/background_image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-size:90%; */
+	animation:5s forwards;
+  	transition:5s ease forwards; 
+	
+	
+}
+
+#container{
+	max-width:840px;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 1036px;
+	margin-top: 30px;
+	margin: 30px auto;
+	border-radius: 2%;
+	box-shadow: 0px 0px 15px black;
+	
+}
+
+#title{
+	color:white;
+	font-size: 5.1rem;
+	/* font-family: 'Bowlby One SC'; */
+	font-weight: bolder;
+	letter-spacing: 0.31rem;
+	text-shadow: 5px 6px 6px black ;
+	padding-top: 10px;
+}
+
+span{
+	color: red;
+}
+
+#description{
+	/* font-family: 'Sorts Mill Goudy', serif; */
+	font-size: 1rem;
+	font-weight: 100;
+	padding: 4px;
+	text-shadow: 1px 1px 1px #272626;
+}
+
+header{
+	text-align: center;
+}
+#survey-form-container{
+	width: 500px;
+	/* height 897px; */
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: auto;
+	padding: 10px 40px;
+	border-radius: 5px;
+}
+
+#survey-form{
+	max-width: 460px;
+	margin: auto;
+	font-size: 1rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-blend-mode: darken;
+	
+}
+
+#name,#age,#email,#dropdown,#feedback{
+	font-family:'Montserrat', sans-serif;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.input-box{
+	margin-top: 20px;
+}
+
+#form-button{
+	width: 160px;
+	height: 45px;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	
+
+}
+
+#form-submit{
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 160px;
+	height: auto;
+	margin-top: 15px;
+}
+
+textarea{
+	resize: none;
+}
